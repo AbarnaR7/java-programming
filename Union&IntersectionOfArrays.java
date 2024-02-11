@@ -14,6 +14,7 @@ public class Main
          a.add(8);
          a.add(9);
          b.add(2);
+         b.add(3);
          b.add(4);
          b.add(6);
          b.add(8);
@@ -34,9 +35,22 @@ public class Main
         }
         
         Collections.sort(c);
+       System.out.println("union:");
+
         for(i=0;i<c.size();i++)
         {
             System.out.print(c.get(i)+" ");
+        }
+        System.out.println("intersection:");
+        for(i=0;i<a.size();i++)
+        {
+            for(int j=0;j<b.size();j++)
+            {
+                if(a.get(i)==b.get(j))
+                {
+                    System.out.print(a.get(i)+" ");
+                }
+            }
         }
 	}
 }
