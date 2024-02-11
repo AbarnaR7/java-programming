@@ -35,13 +35,14 @@ public class Main
         }
         
         Collections.sort(c);
-       System.out.println("union:");
+       System.out.print("union:");
 
         for(i=0;i<c.size();i++)
         {
             System.out.print(c.get(i)+" ");
         }
-        System.out.println("intersection:");
+        System.out.println();
+        System.out.print("intersection:");
         for(i=0;i<a.size();i++)
         {
             for(int j=0;j<b.size();j++)
